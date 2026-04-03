@@ -1,6 +1,8 @@
 import requests
 
-BASE_URL = "http://localhost:8000"
+import os
+
+BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
 
 # ==========================================
 # CALL HISTORICAL DATA API
