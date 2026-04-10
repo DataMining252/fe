@@ -1,7 +1,8 @@
+from dotenv import load_dotenv
 import requests
 
 import os
-
+load_dotenv()
 BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
 
 # ==========================================
