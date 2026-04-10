@@ -1,10 +1,10 @@
 from dotenv import load_dotenv
 import requests
+import streamlit as st
 
 import os
 load_dotenv()
-BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
-
+BASE_URL = os.getenv("BASE_URL") or st.secrets.get("BASE_URL")
 # ==========================================
 # CALL HISTORICAL DATA API
 # ==========================================

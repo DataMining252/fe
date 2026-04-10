@@ -1,7 +1,7 @@
 streamlit
-python-dotenv
 requests
 pandas
 numpy
 plotly
 scipy
+python-dotenv
